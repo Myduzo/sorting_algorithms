@@ -1,8 +1,11 @@
 #include "sort.h"
 /**
  * partition - partition in an ascending order
- * @array : 
- * 
+ * @array : array of integers
+ * @left : left of the array
+ * @right : right of the array
+ * @size : size of the array
+ * Return: partitioned array
  */
 int partition(int *array, int left, int right, size_t size)
 {
@@ -33,8 +36,11 @@ int partition(int *array, int left, int right, size_t size)
 
 
 /**
- * 
- * 
+ * before_quicksort - Lomuto partition schema
+ * @array : array of integers
+ * @left : left of the array
+ * @right : right of the array
+ * @size : size of the array
  */
 void before_quicksort(int *array, int left, int right, size_t size)
 {
@@ -50,8 +56,9 @@ void before_quicksort(int *array, int left, int right, size_t size)
 
 
 /**
- * 
- * 
+ * quick_sort - quick sort fucntion
+ * @array : array of integers
+ * @size : size of array
  */
 void quick_sort(int *array, size_t size)
 {
