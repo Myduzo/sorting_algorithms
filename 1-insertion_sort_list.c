@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * insertion_sort - Insertion sort algorithm
+ * insertion_sort_list - Insertion sort algorithm
  * @list : list of integers
  */
 void insertion_sort_list(listint_t **list)
